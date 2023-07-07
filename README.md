@@ -7,12 +7,12 @@ Example input files are included for:
 
 To run the jobs, type the following command:
 
-'abaqus double inter job=INPUT_FILE user=VUMAT.f'
+`abaqus double inter job=INPUT_FILE user=VUMAT.f`
 
-where 'INPUT_FILE' is the name of the abaqus input file without the '.inp' extension. 
+where `INPUT_FILE` is the name of the abaqus input file without the `.inp` extension. 
 
 If you want to run the jobs with multiple cpus, add the following line to the command above:
 
-'cpus=CPU_NUM mp_mode=threads'
+`cpus=CPU_NUM mp_mode=threads`
 
-where 'CPU_NUM' is the number of cpus you want to use and 'mp_mode=threads' signalises a threads-based parallel execution.
+where `CPU_NUM` is the number of cpus you want to use and `mp_mode=threads` signalises a threads-based parallel execution.
