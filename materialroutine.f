@@ -380,6 +380,7 @@ c
 C ----------------------------------------------------------------------
 C  ECStress: Compute stress from Eight-Chain potential in part A
 C  Input: mu - Shear modulus
+C       lamL - Locking stretch
 C         K  - Bulk modulus
 C         Be - Elastic left Cauchy-Green deformation tensor
 C         Je - Elastic jacobi
@@ -403,10 +404,10 @@ C ----------------------------------------------------------------------
           enddo
       end
 C ----------------------------------------------------------------------
-C  ECStressA: Compute stress from Eight-Chain potential in part B
+C  ECStressA: Compute stress from neo-Hookean potential in part B
 C  Input: mu - Shear modulus
 C         K  - Bulk modulus
-C         Ce - Elastic left Cauchy-Green deformation tensor
+C         Be - Elastic left Cauchy-Green deformation tensor
 C         Je - Elastic jacobi
 C  Output: stress
 C ----------------------------------------------------------------------
@@ -556,7 +557,7 @@ c
       end
 C ----------------------------------------------------------------------
 C tauHat: Pressure modified shear strength
-C Input: 
+C Input:  tau, sigH, alpha
 C Output: tauHat
 C ----------------------------------------------------------------------
 c
