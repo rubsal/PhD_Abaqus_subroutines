@@ -1,5 +1,10 @@
 # Polymer model VUMAT: hyper-viscoelasticity and stochastic stress-based fracture criterion
 This repository contains the Abaqus/Explicit user subroutines for a polymer model developed as part of my PhD.
+The model is calibrated for a photopolymer resin, but should be applicable to most other glassy polymers.
+The implementation of the model is restricted to 3D solid elements, 2D plane stress/strain elements and axisymmetric solid elements.
+
+The document *vumat_documentation.pdf* outlines the governing equations and the implementation of the model.
+
 Example input files are included for:
 
 1. A tensile test with axisymmetric solid elements
